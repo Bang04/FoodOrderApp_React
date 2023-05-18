@@ -4,7 +4,7 @@ import classes from './AvailableMeals.module.css'
 const DUMMY_MEALS = [
     {
       id: 'm1',
-      name: 'Sushi',
+      name: 'KimChi',
       description: 'Finest fish and veggies',
       price: 22.99,
     },
@@ -31,6 +31,7 @@ const AvailableMeals = () =>{
     const mealsList = DUMMY_MEALS.map((meal) => (
       <MealItem
         key={meal.id}
+        id={meal.id}
         name={meal.name}
         description={meal.description}
         price={meal.price}
